@@ -2,3 +2,27 @@
 .intro-body{
   background-image: url(../img/rockformation.jpg)
 }
+
+#projects {
+  padding-top: 2%;
+}
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  width: 100%;
+  padding-bottom: 4%;
+}
+.eachProject {
+  border: 1px solid white;
+  padding: 2%;
+  width: 33%
+}
+#skills, #contact {
+  background-color: grey;
+}
+
+#projects, #about {
+  background-color: rgb(100,100,100);
+}

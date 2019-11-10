@@ -11,7 +11,7 @@ body {
 #projects {
   padding-top: 4%;
 }
-.projectsContainer {
+.projectWrapper {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -20,26 +20,39 @@ img {
   width: 100%;
   padding-bottom: 4%;
 }
-.eachProject {
+.projectContainer {
   border: 1px solid white;
   padding: 2%;
   width: 33%
 }
-
+.projectHeader {
+  border: 1px solid pink;
+  margin-bottom: 2%;
+}
 .projectTitle {
+  border: 1px solid black;
   font-size: 200%;
   display: inline;
 }
 .projectDesc {
   margin-bottom: 2%;
 }
-.buttonWrapper {
-  margin-left: 5%;
-  display: inline;
+.buttonContainer {
+  border: 1px solid blue;
+  float: right;
+  /* display: flex; */
+  /* align-items: center; */
+  vertical-align: center;
+
 }
 .projectSite {
   font-size: 175%;
   color: black;
+  /* top: 50%; */
+  /* display: inline-block; */
+  line-height: 4vh;
+  /* height: 50%; */
+  /* width: 100%; */
   /* margin-right: 1%; */
 }
 footer {
@@ -65,13 +78,14 @@ Section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 65vh;
   width: 40vw;
+  margin: auto;
 }
 
 .skillsContainer {
   /* border: 1px solid pink; */
-  padding: 5%;
+  padding: 4%;
   width: 25%;
   height: 33%;
 }
@@ -83,12 +97,12 @@ Section {
 }
 
 .skillsBox:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
 
 .skillsIcon {
   /* border: 1px solid black; */
-  font-size: 500%;
+  font-size: 750%;
 }
 
 .skillsInfo {
@@ -140,3 +154,13 @@ Section {
   border: bottom 1px black;
   text-align: center;
 }
+
+
+ /* ----------- Thinkpad x250 ----------- */
+@media only screen
+  and (max-device-width: 1366px)
+  and (orientation: landscape) {
+    .projectSite {
+      line-height: 7vh;
+    }
+  }

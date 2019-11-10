@@ -3,6 +3,11 @@
   background-image: url(../img/rockformation.jpg)
 }
 
+body {
+  color: black;
+  background-color: white;
+}
+
 #projects {
   padding-top: 2%;
 }
@@ -19,12 +24,17 @@ img {
   padding: 2%;
   width: 33%
 }
+footer {
+  font-size: 90%;
+  color: white;
+  background-color: black;
+}
 #skills, #contact {
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 #projects, #about {
-  background-color: rgb(100,100,100);
+  /* background-color: rgb(100,100,100); */
 }
 
 Section {
@@ -66,4 +76,44 @@ Section {
   /* height: 20em; */
   /* width: 100%; */
   /* width: 10em; */
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactBox {
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+  width: 33%;
+}
+
+.iconBox {
+  /* border: 1px solid black; */
+  width: 3vw;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.fa-map, .fa-at, .fa-phone {
+  /* border: 1px solid yellow; */
+  color: black;
+  vertical-align: middle;
+  font-size: 250%;
+}
+
+.infoBox {
+  /* border: 1px solid blue; */
+  text-align: left;
+  font-size: 125%;
 }

@@ -9,11 +9,12 @@ body {
 }
 
 #projects {
-  padding-top: 2%;
+  padding-top: 4%;
 }
 .projectsContainer {
   display: flex;
   flex-direction: row;
+  text-align: left;
 }
 img {
   width: 100%;
@@ -23,6 +24,23 @@ img {
   border: 1px solid white;
   padding: 2%;
   width: 33%
+}
+
+.projectTitle {
+  font-size: 200%;
+  display: inline;
+}
+.projectDesc {
+  margin-bottom: 2%;
+}
+.buttonWrapper {
+  margin-left: 5%;
+  display: inline;
+}
+.projectSite {
+  font-size: 175%;
+  color: black;
+  /* margin-right: 1%; */
 }
 footer {
   font-size: 90%;
@@ -61,11 +79,11 @@ Section {
 .skillsBox {
   /* border: 1px solid blue; */
   margin: auto;
-  transition: all .2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .skillsBox:hover {
-  transform: scale(1.15);
+  transform: scale(1.5);
 }
 
 .skillsIcon {
@@ -75,6 +93,7 @@ Section {
 
 .skillsInfo {
   margin-top: 3%;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -115,4 +134,9 @@ Section {
   /* border: 1px solid blue; */
   text-align: left;
   font-size: 125%;
+}
+
+.subHeading {
+  border: bottom 1px black;
+  text-align: center;
 }

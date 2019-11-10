@@ -26,3 +26,31 @@ img {
 #projects, #about {
   background-color: rgb(100,100,100);
 }
+
+Section {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 40vh;
+  width: 40vw;
+  border: 1px solid yellow;
+}
+
+.skillsContainer {
+  border: 1px solid pink;
+  padding: 5%;
+  width: 25%;
+}
+
+.skillsIcon, .devicon-visualstudio-plain {
+  border: 1px solid black;
+  /* width: 25%; */
+  height: 80%;
+  /* width: 100%; */
+  width: 10em;
+}

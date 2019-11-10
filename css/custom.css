@@ -68,30 +68,42 @@ footer {
   /* background-color: rgb(100,100,100); */
 }
 
-Section {
+#projects, #skills, #about, #contact {
+  /* border: 1px solid black; */
+  margin: auto;
   padding-top: 4%;
-  padding-bottom: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
+  /* padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 4%;
+  padding-left: 4%; */
+}
+
+#contact {
+  /* padding-top: 0%; */
+  padding-bottom: 2%;
 }
 
 .skillsWrapper {
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 65vh;
-  width: 40vw;
+  height: 75vh;
+  width: 60vw;
   margin: auto;
 }
 
 .skillsContainer {
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
   padding: 4%;
   width: 25%;
   height: 33%;
 }
 
 .skillsBox {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   margin: auto;
   transition: all 0.5s ease-in-out;
 }
@@ -101,7 +113,7 @@ Section {
 }
 
 .skillsIcon {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   font-size: 750%;
 }
 
@@ -142,6 +154,7 @@ Section {
   color: black;
   vertical-align: middle;
   font-size: 250%;
+  /* margin-right: 1%; */
 }
 
 .infoBox {
@@ -162,5 +175,12 @@ Section {
   and (orientation: landscape) {
     .projectSite {
       line-height: 7vh;
+    }
+    .skillsWrapper {
+      height: 90vh;
+      width: 60vw;
+    }
+    .fa-map, .fa-at, .fa-phone {
+      margin-right: 5%;
     }
   }

@@ -1,5 +1,190 @@
 
-
 .intro-body{
   background-image: url(../img/rockformation.jpg)
 }
+
+body {
+  color: black;
+  background-color: white;
+}
+
+#projects {
+  padding-top: 4%;
+}
+.projectWrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.projectImg {
+  width: 100%;
+  padding-bottom: 4%;
+}
+.projectContainer {
+  border: 1px solid white;
+  padding: 2%;
+  width: 33%
+}
+.projectHeader {
+  border: 1px solid pink;
+  margin-bottom: 2%;
+}
+.projectTitle {
+  border: 1px solid black;
+  font-size: 200%;
+  display: inline;
+}
+.projectDesc {
+  margin-bottom: 2%;
+}
+.buttonContainer {
+  border: 1px solid blue;
+  float: right;
+  vertical-align: center;
+
+}
+.projectSite {
+  font-size: 175%;
+  color: black;
+  line-height: 4vh;
+}
+footer {
+  font-size: 90%;
+  color: white;
+  background-color: black;
+}
+
+#projects, #skills, #about, #contact {
+  margin: auto;
+  padding-top: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.aboutMePicContainer {
+  /* border: solid black 1px; */
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 4%;
+}
+
+.aboutMePic {
+  height: 100%;
+  width: 100%;
+}
+
+.aboutMeInfoContainer {
+  display: inline;
+}
+.aboutMeInfo {
+  /* border: solid blue 1px; */
+  text-align: left;
+  font-size: 135%;
+}
+
+#contact {
+  padding-bottom: 2%;
+}
+
+.skillsWrapper {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 75vh;
+  width: 60vw;
+  margin: auto;
+}
+
+.skillsContainer {
+  border: 1px solid pink;
+  padding: 4%;
+  width: 25%;
+  height: 33%;
+}
+
+.skillsBox {
+  border: 1px solid blue;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.skillsBox:hover {
+  transform: scale(1.25);
+}
+
+.skillsIcon {
+  border: 1px solid black;
+  font-size: 750%;
+}
+
+.skillsInfo {
+  margin-top: 3%;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactBox {
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+  width: 33%;
+}
+
+.iconBox {
+  /* border: 1px solid black; */
+  width: 3vw;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.fa-map, .fa-at, .fa-phone {
+  /* border: 1px solid yellow; */
+  color: black;
+  vertical-align: middle;
+  font-size: 250%;
+}
+
+.infoBox {
+  /* border: 1px solid blue; */
+  text-align: left;
+  font-size: 125%;
+}
+
+.subHeading {
+  border: bottom 1px black;
+  text-align: center;
+}
+
+
+ /* ----------- Thinkpad x250 ----------- */
+@media only screen
+  and (max-device-width: 1366px)
+  and (orientation: landscape) {
+    .projectSite {
+      line-height: 7vh;
+    }
+    .skillsWrapper {
+      height: 90vh;
+      width: 60vw;
+    }
+    .fa-map, .fa-at, .fa-phone {
+      margin-right: 5%;
+    }
+    .aboutMeInfo {
+      font-size: 95%;
+    }
+  }

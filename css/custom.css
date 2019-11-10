@@ -132,7 +132,7 @@ footer {
 .contactBox {
   /* border: 1px solid pink; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 5%;
   width: 33%;
@@ -141,7 +141,8 @@ footer {
 .iconBox {
   /* border: 1px solid black; */
   width: 3vw;
-  margin-right: 2%;
+  /* margin-right: 2%; */
+  margin: auto;
   text-align: center;
 }
 
@@ -151,11 +152,23 @@ footer {
   vertical-align: middle;
 }
 
-.fa-map, .fa-at, .fa-phone {
+.fa-street-view, .fa-at, .fa-phone {
   /* border: 1px solid yellow; */
   color: black;
   vertical-align: middle;
   font-size: 250%;
+}
+
+.fa-street-view {
+  color: yellow;
+}
+
+.fa-at {
+  color: blue;
+}
+
+.fa-phone {
+  color: green;
 }
 
 .infoBox {
@@ -165,8 +178,8 @@ footer {
 }
 
 .subHeading {
-  border: bottom 1px black;
   text-align: center;
+  margin-top: 2%;
 }
 
 
@@ -181,10 +194,50 @@ footer {
       height: 90vh;
       width: 60vw;
     }
-    .fa-map, .fa-at, .fa-phone {
-      margin-right: 5%;
-    }
     .aboutMeInfo {
       font-size: 95%;
+    }
+  }
+
+  /* ----------- iPad ----------- */
+
+/* Portrait */
+@media only screen
+  and (max-width: 768px)
+  and (orientation: portrait) {
+    .projectWrapper {
+      flex-direction: column;
+    }
+    .projectContainer {
+      width: 100%;
+    }
+    .skillsWrapper {
+      height: 56vh;
+      width: 88vw;
+    }
+    .aboutMeInfo {
+      font-size: 103%;
+    }
+  }
+
+    /* Landscape */
+@media only screen
+  and (max-width: 1024px)
+  and (orientation: landscape) {
+    .projectWrapper {
+      flex-direction: column;
+    }
+    .projectContainer {
+      width: 100%;
+    }
+    .projectSite {
+      line-height: 5vh;
+    }
+    .skillsWrapper {
+      height: 80vh;
+      width: 88vw;
+    }
+    .aboutMeInfo {
+      font-size: 110%;
     }
   }

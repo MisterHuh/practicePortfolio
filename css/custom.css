@@ -13,17 +13,28 @@ body {
 }
 .projectWrapper {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
   text-align: left;
+
 }
 .projectImg {
+  /* height: 50%; */
   width: 100%;
   padding-bottom: 4%;
+}
+.empContainer {
+  height: 28vh;
+}
+.emp {
+  height: 100%;
+  background-size: cover;
 }
 .projectContainer {
   border: 1px solid white;
   padding: 2%;
-  width: 33%
+  width: 33%;
+  /* width: 50%; */
 }
 .projectHeader {
   border: 1px solid pink;

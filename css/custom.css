@@ -13,8 +13,10 @@ body {
 }
 .projectWrapper {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
   text-align: left;
+
 }
 .projectImg {
   width: 100%;
@@ -23,7 +25,7 @@ body {
 .projectContainer {
   border: 1px solid white;
   padding: 2%;
-  width: 33%
+  width: 33%;s
 }
 .projectHeader {
   border: 1px solid pink;
@@ -160,15 +162,15 @@ footer {
 }
 
 .fa-street-view {
-  color: yellow;
+  color: #f0ad4e;
 }
 
 .fa-at {
-  color: blue;
+  color: #0275d8;
 }
 
 .fa-phone {
-  color: green;
+  color: #5cb85c;
 }
 
 .infoBox {
